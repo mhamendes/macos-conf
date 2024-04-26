@@ -1,0 +1,29 @@
+[keyboard]
+bindings = [
+  { chars = "\u0002", key = "Shift", mods = "Command" },
+  { chars = "tmux attach || new -s main \u000D", key = "A", mods = "Command|Shift" },
+  { chars = "\u0002\u005b\u002f", key = "F", mods =  "Command|Shift" }, # start tmux search mode
+]
+
+[font]
+normal      = { family = "CommitMono Nerd Font", style = "Regular" }
+bold        = { family = "CommitMono Nerd Font", style = "Bold" }
+italic      = { family = "CommitMono Nerd Font", style = "Italic" }
+bold_italic = { family = "CommitMono Nerd Font", style = "Bold Italic" }
+
+[selection]
+save_to_clipboard = true
+
+[colors.primary]
+background = "#000000"
+
+[window]
+decorations = "transparent"
+opacity = 1
+startup_mode = "Maximized"
+padding = { x = 4, y = 12 }
+
+[env]
+TERM = "alacritty"
+
+import = "~/.config/alacritty/themes/themes/hyper.toml"

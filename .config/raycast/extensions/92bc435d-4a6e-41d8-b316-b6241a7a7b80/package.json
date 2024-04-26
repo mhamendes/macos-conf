@@ -1,0 +1,44 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "lucide-icons",
+  "title": "Lucide Icons Search",
+  "description": "View the Lucide icon set.",
+  "icon": "command-icon.png",
+  "author": "Sn0wye",
+  "categories": [
+    "Design Tools",
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "contributors": [
+    "lin"
+  ],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Search Icons",
+      "subtitle": "Lucide",
+      "description": "Grid view of Lucide icons",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.65.0",
+    "@raycast/utils": "^1.10.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
